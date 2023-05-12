@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "lucida_granderegular";
+  src: url("../font/lucidagrande-webfont.woff2") format("woff2"),
+    url("../font/lucidagrande-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lucida_grandebold";
+  src: url("../font/lucidagrandebold-webfont.woff2") format("woff2"),
+    url("../font/lucidagrandebold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --gray: hsl(225, 19%, 31%);
+  --yellow: hsl(55, 100%, 50%);
+  --lightBlue: hsl(223, 42%, 58%);
+  --blue: hsl(220, 99%, 30%);
+}
+
+body {
+  font-family: "lucida_granderegular";
+}
+
+/* ! Navbar Start */
+
+.navbar.navbar-dark {
+  background-color: var(--gray);
+  margin-bottom: 10px;
+}
+
+.container .navbar-brand {
+  font-family: "lucida_grandebold";
+  background-color: var(--yellow);
+  color: var(--black);
+  padding: 9px;
+  font-weight: bold;
+}
+.container .navbar-brand:hover {
+  color: var(--gray);
+}
+.container .navbar-brand:focus {
+  color: var(--black);
+}
+
+/* ! Navbar End */
+
+.fa-solid {
+  cursor: pointer;
+}
